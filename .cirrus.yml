@@ -8,6 +8,8 @@ task:
     image: catalina-xcode-11.3.1-flutter
   upgrade_script:
     - date
+    - sudo sntp -sS time.apple.com || true
+    - date
     - sudo gem install cocoapods
     - flutter channel stable
     - flutter upgrade
@@ -71,6 +73,8 @@ task:
   setup_script:
     - flutter config --enable-macos-desktop
   upgrade_script:
+    - date
+    - sudo sntp -sS time.apple.com || true
     - date
     - sudo gem install cocoapods
     - flutter channel master
