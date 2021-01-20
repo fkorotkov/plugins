@@ -15,5 +15,5 @@ Pod::Spec.new do |s|
   s.source           = { :http => 'https://github.com/flutter/plugins/tree/master/packages/path_provider/path_provider_linux' }
   s.documentation_url = 'https://pub.dev/packages/path_provider'
   s.dependency 'Flutter'
-  s.platform = :ios, '8.0'
+  s.platform = :ios, '9.0'
 end
